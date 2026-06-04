@@ -42,7 +42,7 @@ next-env.d.ts
 
 # my files
 bin
-
+x.txt
 
 # local env
 .env.local

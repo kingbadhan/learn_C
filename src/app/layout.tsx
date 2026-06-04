@@ -3,7 +3,10 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,21 +19,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pankaj Badhan",
-  description: "Developer",
+  title: "Pankaj Badhan | Developer",
+  description:
+    "Student building real-world projects in web development, AI, and systems.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      className={cn(
+        geistSans.variable,
+        geistMono.variable,
+        inter.variable,
+        "dark"
+      )}
     >
-      <body className="min-h-full flex flex-col text-white">{children}</body>
+      <body className="min-h-screen bg-[#030712] text-white antialiased font-sans">
+        {children}
+      </body>
     </html>
   );
 }
