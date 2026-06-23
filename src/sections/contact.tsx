@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -34,7 +33,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="mt-6 text-white text-5xl md:text-7xl font-bold leading-[1]"
         >
-          Let’s Build Something
+          Build Something
         </motion.h2>
 
         <motion.p
@@ -45,7 +44,7 @@ export default function Contact() {
         >
           I’m currently open to freelance work, remote opportunities,
           and collaborations. If you’re building something interesting,
-          let’s talk.
+          let’s talk on.
         </motion.p>
 
         {/* Cards */}
@@ -58,13 +57,12 @@ export default function Contact() {
 
           {/* Email */}
           <a
-            href="mailto:yourmail@gmail.com"
+            href="mailto:pankajbadhann@gmail.com"
             className="group flex items-center justify-between border border-white/10 rounded-2xl p-6 bg-white/5 hover:bg-white/10 transition"
           >
             <span className="text-white group-hover:text-blue-400 transition">
               Email
             </span>
-            <Mail size={18} className="text-zinc-400 group-hover:text-blue-400" />
           </a>
 
           {/* GitHub */}
@@ -76,19 +74,17 @@ export default function Contact() {
             <span className="text-white group-hover:text-blue-400 transition">
               GitHub
             </span>
-            {/* <Github size={18} className="text-zinc-400 group-hover:text-blue-400" /> */}
           </a>
 
-          {/* LinkedIn */}
+          {/* WhatsApp */}
           <a
-            href="https://linkedin.com"
+            href="https://web.whatsapp.com/send/?phone=917837618700"
             target="_blank"
             className="group flex items-center justify-between border border-white/10 rounded-2xl p-6 bg-white/5 hover:bg-white/10 transition"
           >
             <span className="text-white group-hover:text-blue-400 transition">
-              LinkedIn
+              Whatsapp
             </span>
-            {/* <Linkedin size={18} className="text-zinc-400 group-hover:text-blue-400" /> */}
           </a>
 
         </motion.div>

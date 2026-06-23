@@ -2,6 +2,8 @@
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
+import { FiMail } from "react-icons/fi";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   const mouseX = useMotionValue(0);
@@ -117,24 +119,54 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
           className=" mt-8 max-w-2xl text-zinc-400 text-lg md:text-xl leading-relaxed"
         >
-          I turn curiosity into working systems.
-          <br />I build, break, and rebuild ideas until they become real
-          products.
+          Addicted to Actioning Ideas
         </motion.p>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="mt-10 flex flex-wrap gap-4"
         >
           <button className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-zinc-200 transition-all">
-            View Work
+            Projects
           </button>
 
           <button className="px-8 py-4 border border-white/20 text-white rounded-xl backdrop-blur-md hover:bg-white/10 transition-all">
             Contact
           </button>
+        </motion.div> */}
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="mt-10 flex items-center gap-5"
+        >
+          <a
+            href="mailto:pankajbadhann@gmail.com"
+            className="p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-zinc-300 hover:text-white hover:border-blue-500/40 hover:bg-white/10 transition-all duration-300"
+          >
+            <FiMail size={24} />
+          </a>
+
+          <a
+            href="https://github.com/pankajbadhann"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-zinc-300 hover:text-white hover:border-blue-500/40 hover:bg-white/10 transition-all duration-300"
+          >
+            <FaGithub size={24} />
+          </a>
+
+          <a
+            href="https://wa.me/917837618700"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-zinc-300 hover:text-white hover:border-green-500/40 hover:bg-white/10 transition-all duration-300"
+          >
+            <FaWhatsapp size={24} />
+          </a>
         </motion.div>
       </div>
     </section>

@@ -1,43 +1,22 @@
 export const projects = [
   {
-    title: "AI Assistant",
+    title: "chizze",
     description:
-      "Built an experimental AI assistant exploring conversational workflows and API integrations.",
+      "able to chase it",
     stack: ["Next.js", "OpenAI", "TypeScript"],
   },
 
   {
-    title: "Portfolio System",
+    title: "see-quotes",
     description:
-      "Modern developer portfolio with scalable architecture and modular sections.",
+      "all quotes in single app",
     stack: ["Next.js", "Tailwind", "Framer Motion"],
   },
 
   {
-    title: "Full Stack App",
+    title: "bklvr",
     description:
-      "Exploring backend architecture with authentication and database design.",
-    stack: ["Node.js", "PostgreSQL", "Prisma"],
-  },
-
-  {
-    title: "Full Stack App",
-    description:
-      "Exploring backend architecture with authentication and database design.",
-    stack: ["Node.js", "PostgreSQL", "Prisma"],
-  },
-
-  {
-    title: "Full Stack App",
-    description:
-      "Exploring backend architecture with authentication and database design.",
-    stack: ["Node.js", "PostgreSQL", "Prisma"],
-  },
-
-  {
-    title: "Full Stack App",
-    description:
-      "Exploring backend architecture with authentication and database design.",
+      "book recomendation system",
     stack: ["Node.js", "PostgreSQL", "Prisma"],
   },
 ];

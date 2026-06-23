@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pankaj Badhan | Developer",
+  title: "pankajbadhann",
   description:
     "Student building real-world projects in web development, AI, and systems.",
 };
